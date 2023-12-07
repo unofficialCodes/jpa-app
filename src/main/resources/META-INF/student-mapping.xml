@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence/orm http://https://jakarta.ee/xml/ns/persistence/orm_3_0.xsd"
+                 version="3.0">
+    <description>
+        Student entity mapping file
+    </description>
+    <package>org.jpa.app.model</package>
+    <entity class="org.jpa.app.model.Student" name="Student" >
+        <table name="students" schema="public" >
+            <unique-constraint>
+                <column-name>id</column-name>
+            </unique-constraint>
+        </table>
+
+        <sequence-generator name="id_sequence" allocation-size="1" initial-value="1" sequence-name="id_sequence" />
+        <attributes>
+            <id name="id">
+                <generated-value generator="id_sequence" strategy="SEQUENCE"/>
+            </id>
+            <basic name="name" fetch="LAZY" optional="true" />
+            <basic name="email" fetch="LAZY" optional="false">
+                <column name="email" updatable="true" length="255" />
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
