@@ -1,4 +1,4 @@
-package org.jpa.app.model;
+package org.jpa.app.entityMappings;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -12,7 +12,6 @@ import jakarta.persistence.SequenceGenerator;
 import jakarta.persistence.Table;
 import jakarta.persistence.TableGenerator;
 import jakarta.persistence.UniqueConstraint;
-import org.hibernate.annotations.LazyGroup;
 
 @Entity
 @Table(name = "annotated_entity_tbl", schema = "public", uniqueConstraints = {@UniqueConstraint(name = "id", columnNames = {"id"})})

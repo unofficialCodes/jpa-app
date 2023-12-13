@@ -1,4 +1,4 @@
-package org.jpa.app.model;
+package org.jpa.app.entityMappings;
 
 //@Entity
 //@Table(name = "students")

@@ -6,8 +6,8 @@
     <description>
         Student entity mapping file
     </description>
-    <package>org.jpa.app.model</package>
-    <entity class="org.jpa.app.model.Student" name="Student" >
+    <package>org.jpa.app.entityMappings</package>
+    <entity class="org.jpa.app.entityMappings.Student" name="Student" >
         <table name="students" schema="public" >
             <unique-constraint>
                 <column-name>id</column-name>

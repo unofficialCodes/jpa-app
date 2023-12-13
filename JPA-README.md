@@ -31,9 +31,9 @@ Below tag should be included in the persistence.xml, to map entities through xml
 ```
 <persistence>
     <persistence-unit>
-    <class name="org.jpa.app.model.AnnotatedEntity" />
+    <class name="org.jpa.app.entityMappings.AnnotatedEntity" />
     <properties>
-        <property name="packagesToScan" value="org.jpa.app.model"/>
+        <property name="packagesToScan" value="org.jpa.app.entityMappings"/>
     </properties>
     </persistence-unit>
 </persistence>

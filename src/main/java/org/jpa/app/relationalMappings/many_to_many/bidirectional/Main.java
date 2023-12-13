@@ -15,7 +15,7 @@ import java.util.Set;
 public class Main {
     public static void main(String[] args) {
         EntityManagerFactory emf = new HibernatePersistenceProvider()
-                .createContainerEntityManagerFactory(new CustomPersistenceUnitInfo(), new HashMap());
+                .createContainerEntityManagerFactory(new CustomPersistenceUnitInfo(), new HashMap<>());
         EntityManager em = emf.createEntityManager();
         EntityTransaction eTx = em.getTransaction();
 

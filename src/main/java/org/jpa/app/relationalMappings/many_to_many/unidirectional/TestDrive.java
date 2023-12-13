@@ -15,7 +15,7 @@ public class TestDrive {
     public static void main(String[] args) {
 
         EntityManagerFactory emf = new HibernatePersistenceProvider().createContainerEntityManagerFactory(new CustomPersistenceUnitInfo(), new HashMap());
-        EntityManager em = emf.createEntityManager(); // create a context
+        EntityManager em = emf.createEntityManager(); // create a context and associate to it
         EntityTransaction eTx = em.getTransaction(); // get transaction
 
         eTx.begin();

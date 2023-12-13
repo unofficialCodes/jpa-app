@@ -4,7 +4,7 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.Persistence;
-import org.jpa.app.model.Student;
+import org.jpa.app.entityMappings.Student;
 
 public class App
 {

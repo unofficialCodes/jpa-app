@@ -9,7 +9,7 @@
 
         <mapping-file>\META-INF\student-mapping.xml</mapping-file>
 
-        <!--        <class>org.jpa.app.model.AnnotatedEntity</class>-->
+        <!--        <class>org.jpa.app.entityMappings.AnnotatedEntity</class>-->
         <!--        <class>org.jpa.app.embedded.User</class>-->
 
         <!--        <class>org.jpa.app.enumeration.Employee</class>-->
@@ -22,7 +22,7 @@
 
         <properties>
             <!--  Package of entities  -->
-            <!--<property name="packagesToScan" value="org.jpa.app.model"/>-->
+            <!--<property name="packagesToScan" value="org.jpa.app.entityMappings"/>-->
 
             <!-- JPA JDBC connection specific configs -->
             <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost/postgres?useSSL=false"/>
@@ -54,7 +54,7 @@
         <class>org.jpa.app.secondaryTables.PrimaryTable</class>
         <properties>
             <!--  Package of entities  -->
-            <!--            <property name="packagesToScan" value="org.jpa.app.model"/>-->
+            <!--            <property name="packagesToScan" value="org.jpa.app.entityMappings"/>-->
 
             <!-- JPA JDBC connection specific configs -->
             <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost/postgres?useSSL=false"/>
