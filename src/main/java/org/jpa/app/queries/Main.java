@@ -2,9 +2,12 @@ package org.jpa.app.queries;
 
 import org.hibernate.jpa.HibernatePersistenceProvider;
 import org.jpa.app.queries.config.PersistenceConfig;
+import org.jpa.app.queries.entities.Product;
 
+import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.stream.IntStream;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,16 +21,14 @@ public class Main {
 
         eTx.begin();
 
-        /*
         IntStream.rangeClosed(1, 6)
                 .forEach(number -> {
                     var p1 = new Product();
                     p1.setName("product-" + number);
-                    p1.setPrice(new BigDecimal(Math.random() * 10));
+                    p1.setPrice(BigDecimal.valueOf(Math.random() * 10));
 
                     em.persist(p1);
                 });
-       */
         /*String jpql = """
                 SELECT p from Product p
                 """;
