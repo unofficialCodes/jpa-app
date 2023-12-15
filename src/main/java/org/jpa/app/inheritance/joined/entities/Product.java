@@ -11,8 +11,8 @@ import jakarta.persistence.InheritanceType;
  * Inheritance has three strategies, SINGLE_TABLE, TABLE_PER_CLASS, and JOINED.
  *
  * InheritanceType.JOINED -
- * A new table will be created for the parent entity and for each sub-entities, and a primary key column will be added from the parent entity and holds the same values.
- * All primary key columns in sub-entity tables are referenced (foreign key) to parent primary key column
+ * A new table will be created for the parent entity and for each sub-entities, and a primary key column will be added from the parent entity that holds the same values.
+ * All primary key columns in sub-entity tables are referenced (foreign key) to parent table primary key column
  * Each time a query is executed hibernate will automatically query the database with a join clause (inner/outer join) to fetch data from all the tables.
  *
  *
