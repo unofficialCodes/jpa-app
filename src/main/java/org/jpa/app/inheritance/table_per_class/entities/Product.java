@@ -19,7 +19,7 @@ import jakarta.persistence.InheritanceType;
  * */
 
 @Entity
-@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS) // JOIN queries are executed on sub-entities/tables
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public abstract class Product {
 
     @Id
